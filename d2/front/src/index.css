@@ -1,8 +1,13 @@
+html{
+  font-size: 64.5%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  font-size: 1.6rem;
 }
 
 header {
@@ -17,23 +22,23 @@ section {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px;
+  margin: 2rem;
 }
 
 .motoboy-card {
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  padding: 20px;
-  width: 300px;
+  border-radius: .8rem;
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 2rem;
+  width: 30rem;
   text-align: center;
   cursor: pointer;
+  border-left: 1rem solid #EF4342;
 }
 
 .motoboy-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
 }
 
 .motoboy-card h2 {
@@ -47,19 +52,19 @@ section {
 .motoboy-actions {
   display: flex;
   justify-content: space-around;
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
 .motoboy-actions button {
   background-color: #EF4342;
   border: none;
   color: #fff;
-  padding: 8px 16px;
+  padding: .8rem 1.6rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
+  font-size: 1.4rem;
+  border-radius: .4rem;
   cursor: pointer;
   transition: .1s;
 }
