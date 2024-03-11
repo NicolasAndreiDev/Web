@@ -1,34 +1,16 @@
-function App() {
-  const list = new Array(4).fill({
-    nome: "Nicolas Andrei da Silva", 
-    placa: "XXX-1234", 
-    telefone: "(123) 456-7890",
-    email: "motoboy@example.com"
-  });
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+import Motoboy from "./pages/motoboy";
 
-  return (
-    <div>
-      <header>
-      <h1>Gestão de Motoboys</h1>
-      </header>
-      <section>
-        {list.map((card) => {
-          return(
-            <div class="motoboy-card">
-              <h2>{card.nome}</h2>
-              <p>Placa: {card.placa}</p>
-              <p>Telefone: {card.telefone}</p>
-              <p>Email: {card.email}</p>
-              <div class="motoboy-actions">
-                <button>Editar</button>
-                <button>Excluir</button>
-              </div>
-            </div>
-          )
-        })}
-      </section>
-    </div>
-  );
+function App() {
+    return(
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/:id" element={<Motoboy />} />
+            </Routes>
+        </BrowserRouter>
+    )
 }
 
 export default App;

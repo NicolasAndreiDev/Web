@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    height: 5vh;
+    background-color: #d3d2d2;
+    display: grid;
+    place-items: center;
+}
+
+.footer p {
+    color: rgb(80, 80, 80);
+}

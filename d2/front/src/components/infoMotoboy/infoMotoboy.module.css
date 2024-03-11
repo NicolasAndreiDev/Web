@@ -1,0 +1,154 @@
+.info_motoboy, .info_motoboy_high {
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.info_motoboy {
+    height: 85vh !important;
+}
+
+.back{
+    top: 4rem;
+    position: absolute;
+}
+
+.card_motoboy {
+    display: flex;
+    background-color: white;
+    padding: 6rem 8rem;
+    gap: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    border-radius: .4rem;
+    width: 36rem;
+}
+
+.dados_motoboy {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input_style {
+    border: .1rem solid rgb(184, 184, 184);
+    padding: 1rem 1.6rem;
+    border-radius: .4rem;
+    width: 36rem;
+    font-size: 1.6rem;
+    overflow: hidden;
+    text-wrap: nowrap;
+    box-sizing: border-box;
+}
+
+.div_input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: .1rem solid rgb(7, 7, 7) !important;
+}
+
+.inputs_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.edit_button, .delete_button {
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    padding: 1rem 1.6rem;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.edit_button {
+    background-color: rgb(84, 207, 80);
+}
+
+.edit_button:hover {
+    background-color: rgba(84, 207, 80, 0.863);
+}
+
+.delete_button {
+    background-color: #EF4342;
+}
+
+.delete_button:hover {
+    background-color: #ef4242d0;
+}
+
+@media screen and (max-width: 1100px) {
+    .info_motoboy {
+        height: 85vh;
+    }
+
+    .image {
+        width: 24rem;
+    }
+
+    .input_style {
+        width: 24rem;
+    }
+
+    .info_motoboy_high {
+        height: auto !important;
+        margin: 4rem 0;
+    }
+
+    .card_motoboy {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .dados_motoboy {
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .info_motoboy {
+        height: 85vh !important;
+    }
+
+    .info_motoboy_high {
+        height: auto;
+    }
+
+    .card_motoboy {
+        padding: 4rem 6rem;
+    }
+    
+    .image {
+        width: 20rem;
+    }
+
+    .input_style {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .card_motoboy {
+        padding: 2rem 4rem;
+    }
+    
+    .image {
+        width: 16rem;
+    }
+
+    .input_style {
+        width: 16rem;
+    }
+}

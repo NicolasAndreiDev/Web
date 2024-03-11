@@ -1,0 +1,19 @@
+.motoboys {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.view {
+    margin: 4rem 0;
+    height: auto !important;
+}
+
+@media screen and (max-width: 1600px) {
+    .motoboys {
+        height: auto;
+        margin: 4rem 0;
+    }
+}

@@ -1,0 +1,55 @@
+.motoboy_card {
+    background-color: #fff;
+    border-radius: .8rem;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    width: 30rem;
+    text-align: center;
+    flex-direction: column;
+    cursor: pointer;
+    border-left: 1rem solid #EF4342;
+}
+
+.motoboy_card:hover {
+    box-shadow: 0 .4rem .8rem rgba(0, 0, 0, 0.2);
+}
+
+.motoboy_card h2 {
+    color: #333;
+}
+
+.motoboy img {
+    width: 100%;
+}
+
+.motoboy_card p {
+    color: #666;
+}
+
+.motoboy_actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.view_button{
+    color: white;
+    border: none;
+    padding: 1.6rem;
+    border-radius: .4rem;
+    background-color: #EF4342;
+    cursor: pointer;
+    transition: .42s;
+}
+
+.view_button:hover {
+    background-color: #ef4242e0;
+}
+
+@media screen and (max-width:400px) {
+    .motoboy_card {
+        width: 70vw;
+    }
+}
