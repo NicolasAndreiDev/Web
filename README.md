@@ -1,4 +1,7 @@
-para rodar o projeto d2/front localmente:
+# Para rodar o projeto d2/front localmente:
 
-npm start - para o frontend
-npm run dev - para o backend em json-server
+## Frontend
+npm start
+
+## Json-Server
+npm run dev
