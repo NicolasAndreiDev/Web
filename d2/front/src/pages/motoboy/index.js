@@ -6,12 +6,11 @@ import Footer from "../../components/footer";
 
 function Motoboy() {
     const { id } = useParams();
-    const motoboys = useMotoboys();
-    const motoboy = motoboys.find((motoboy) => motoboy.id === id);
+    const motoboy = useMotoboys(id);
 
     return (
         <>  
-            {id && motoboy && (
+            {id && motoboy && motoboy.nome && motoboy.placa && motoboy.telefone && motoboy.email && (
                 <>
                     <Header title={motoboy.nome}/>
                     <InfoMotoboy motoboyInfo={motoboy}/>

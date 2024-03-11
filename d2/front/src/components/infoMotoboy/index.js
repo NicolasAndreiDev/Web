@@ -74,8 +74,8 @@ InfoMotoboy.propTypes = {
         nome: PropTypes.string.isRequired,
         placa: PropTypes.string.isRequired,
         telefone: PropTypes.string.isRequired,
-        email: PropTypes.string.isRequired,
-    }).isRequired,
-};
+        email: PropTypes.string.isRequired
+    }).isRequired
+}
 
 export default InfoMotoboy;
